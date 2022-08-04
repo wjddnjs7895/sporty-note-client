@@ -14,6 +14,15 @@ export function getPixelToPixel(size: number) {
   return result.toString() + 'px';
 }
 
+export function getPixelToNumber(size: number) {
+  const scale = WIDTH / FIGMA__WINDOW__WIDTH;
+
+  const newSize = size * scale;
+  let result = 0;
+  result = Math.round(PixelRatio.roundToNearestPixel(newSize));
+  return result;
+}
+
 export const getWidthPercentage = (width: number) => {
   const result = Math.round((width / FIGMA__WINDOW__WIDTH) * 100);
   return result.toString() + '%';
