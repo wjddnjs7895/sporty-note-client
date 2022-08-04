@@ -1,14 +1,29 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { ScrollView } from 'react-native';
+import styled from 'styled-components/native';
 
-import MainButton from '../components/Button/MainButton';
+import MainHeaderContainer from '../components/Container/MainHeaderContainer';
+import MainButtonContainer from '../components/Container/MainButtonContainer';
+import MainNoteContainer from '../components/Container/MainNoteContainer';
+
+import { BackgroundStyle } from '../constants/styles';
 
 const MainScreen = () => {
   return (
-    <MainButton>
-      <Text>MainScreen</Text>
-    </MainButton>
+    <ScrollView showsVerticalScrollIndicator={false}>
+      <ScreenStyled>
+        <MainHeaderContainer />
+        <MainButtonContainer />
+        <MainNoteContainer />
+      </ScreenStyled>
+    </ScrollView>
   );
 };
+
+const ScreenStyled = styled(BackgroundStyle)`
+  display: flex;
+  align-items: center;
+  margin-bottom: 1500px;
+`;
 
 export default MainScreen;
