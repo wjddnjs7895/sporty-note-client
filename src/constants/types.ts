@@ -67,3 +67,12 @@ export interface ContainerStyle {
 export interface ContainerProps extends ContainerStyle {
   className?: string;
 }
+
+export interface MemoStyle {
+  tagColor?: string;
+  memoTitle?: string;
+}
+
+export interface MemoProps extends MemoStyle {
+  children?: ReactNode;
+}
