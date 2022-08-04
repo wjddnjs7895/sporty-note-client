@@ -24,7 +24,13 @@ export const palette: PaletteType = {
   gray_18: '#FFFFFF',
   neon_green: '#80EB55',
   lime_01: '#E8FE54',
-  lime_02: 'DDF824',
+  lime_02: '#DDF824',
+  tag_01: '#BD9CFF',
+  tag_02: '#FABBD1',
+  tag_03: '#F67A7A',
+  tag_04: '#8DE3D9',
+  tag_05: '#82BBFF',
+  tag_06: '#FFFA82',
 };
 
 export type PaletteKeyTypes = keyof typeof palette;
