@@ -3,6 +3,7 @@ import styled from 'styled-components/native';
 
 import NoteListButton from '../Button/NoteListButton';
 import MainCardListContainer from './MainCardListContainer';
+import MemoList from '../Note/MemoList';
 import Blank from '../Blank';
 import { getWidthPixel, getHeightPixel } from '../../utils/responsive';
 import DotIndex from '../Index/DotIndex';
@@ -17,6 +18,7 @@ function MainNoteContainer() {
       <Blank height={'25px'} />
       <MainCardListContainer height={getWidthPixel(150)} />
       <DotIndex />
+      <MemoList />
     </ContainerStyled>
   );
 }
