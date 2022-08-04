@@ -7,6 +7,7 @@ import MainButtonContainer from '../components/Container/MainButtonContainer';
 import MainNoteContainer from '../components/Container/MainNoteContainer';
 
 import { BackgroundStyle } from '../constants/styles';
+import { getHeightPixel } from '../utils/responsive';
 
 const MainScreen = () => {
   return (
@@ -23,7 +24,7 @@ const MainScreen = () => {
 const ScreenStyled = styled(BackgroundStyle)`
   display: flex;
   align-items: center;
-  margin-bottom: 1500px;
+  margin-bottom: ${getHeightPixel(50)};
 `;
 
 export default MainScreen;
